@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": ["vscodium.now.sh"],
+  "alias": ["update.randomlabs.ai"],
   "routes": [
     {
       "src": "/api/update/(?<platform>[^/]+)/(?<quality>[^/]+)/(?<commit>[^/]+)",
