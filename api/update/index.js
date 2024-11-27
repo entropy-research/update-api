@@ -54,6 +54,7 @@ async function getJSON ({ quality, os, arch, type }) {
     if (!response.body) return null
     return response.body
   } catch (e) {
+    console.log(e.message);
     return null
   }
 }
