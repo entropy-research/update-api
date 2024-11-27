@@ -39,7 +39,7 @@ const OS = new Set([DARWIN, LINUX, WINDOWS])
 const TYPES = new Set([ARCHIVE, MSI, USER, SYSTEM])
 const ARCH = new Set([ARM64, IA32, X64])
 
-const VERSION_BASE_URL = 'https://raw.githubusercontent.com/VSCodium/versions/master'
+const VERSION_BASE_URL = 'https://raw.githubusercontent.com/entropy-research/versions/master'
 
 async function getJSON ({ quality, os, arch, type }) {
   // get os/arch/type specific JSON file from a repo where these files are stored
