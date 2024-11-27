@@ -49,7 +49,7 @@ async function getJSON ({ quality, os, arch, type }) {
 
   try {
     console.log(`${versionUrl}/latest.json`);
-    const response = JSON.parse(await got(`${versionUrl}/latest.json`))
+    const response = await got(`${versionUrl}/latest.json`)
     console.log(response.body);
     if (!response.body) return null
     return response.body
