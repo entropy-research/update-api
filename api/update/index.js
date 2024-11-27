@@ -97,6 +97,8 @@ module.exports = async (req, res) => {
     return
   }
 
+  console.log(platform, quality, commit)
+
   const latest = await getJSON(input)
   console.log(latest)
 
