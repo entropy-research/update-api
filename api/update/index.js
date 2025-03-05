@@ -108,11 +108,11 @@ module.exports = async (req, res) => {
   // vercel supports cache-control header; we can use this to cut down on cost
   // currently set to cache for 4hrs
   // res.setHeader('cache-control', 's-maxage=14400')
-  if (!latest || commit === latest.version) {
-    res.writeHead(204)
-    res.end()
-    return
-  }
+  // if (!latest || commit === latest.version) {
+  //   res.writeHead(204)
+  //   res.end()
+  //   return
+  // }
   res.setHeader('Content-Type', 'application/json')
   res.write(JSON.stringify(latest))
   res.end()
