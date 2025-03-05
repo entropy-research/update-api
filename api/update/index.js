@@ -114,6 +114,6 @@ module.exports = async (req, res) => {
   //   return
   // }
   res.setHeader('Content-Type', 'application/json')
-  res.write(JSON.stringify(latest))
+  res.write(latest)
   res.end()
 }
